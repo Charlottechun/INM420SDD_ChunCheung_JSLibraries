@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Travel With Charlotte</title>
+      <link rel="stylesheet" href="/assets/css/style.css">
+      <!-- AOS CSS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+      <!-- Glide CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+      <!-- Lightbox CSS -->
+      <link rel="stylesheet" href="https://unpkg.com/lightbox2/dist/css/lightbox.min.css">
+      <!-- Leaflet CSS -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+      <!-- granim CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/granim.js@2.0.0/dist/granim.min.css">
+      <!-- font -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="logo">
+            <img src="/assets/images/cc.png" alt="Explore the World Logo">
+         </div>
+         <nav>
+            <ul>
+               <li><a href="#destinations">Destinations</a></li>
+               <li><a href="#food">Food Guide</a></li>
+               <li><a href="#map">Map</a></li>
+            </ul>
+         </nav>
+      </header>
+      <!-- Hero -->
+      <section class="hero-section">
+         <div class="hero-text">
+            <h1>Explore Canada With Us</h1>
+            <p>READ MORE ></p>
+         </div>
+         <canvas id="hero-gradient"></canvas>
+      </section>
+      <!-- destinations - glide -->
+      <section id="destinations" data-aos="fade-up" class="d-section">
+         <h2>Top Destinations</h2>
+         <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+               <ul class="glide__slides">
+                  <li class="glide__slide">
+                     <div class="image-container">
+                        <img src="/assets/images/bf.webp" alt="Banff view">
+                        <span class="decorated-span" id="banff-span">Banff</span>
+                     </div>
+                  </li>
+                  <li class="glide__slide">
+                     <div class="image-container">
+                        <img src="/assets/images/dt.webp" alt="Toronto City view">
+                        <span class="decorated-span" id="toronto-span">Toronto</span>
+                     </div>
+                  </li>
+                  <li class="glide__slide">
+                     <div class="image-container">
+                        <img src="/assets/images/yukon.webp" alt="Yukon">
+                        <span class="decorated-span" id="yukon-span">Yukon</span>
+                     </div>
+                  </li>
+                  <li class="glide__slide">
+                     <div class="image-container">
+                        <img src="/assets/images/qb.webp" alt="Québec City view">
+                        <span class="decorated-span" id="quebec-span">Québec</span>
+                     </div>
+                  </li>
+                  <li class="glide__slide">
+                     <div class="image-container">
+                        <img src="/assets/images/yk.webp" alt="Yellowknife view">
+                        <span class="decorated-span" id="yf-span">Yellowknife</span>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div data-glide-el="controls" class="glide-controls">
+               <button data-glide-dir="<" class="arrow-button">&lt;</button>
+               <button data-glide-dir=">" class="arrow-button">&gt;</button>
+            </div>
+         </div>
+      </section>
+      <!-- Food guide - Lightbox -->
+      <section id="food" data-aos="fade-up">
+         <h2>Food Guide</h2>
+         <div class="gallery">
+            <a href="/assets/images/pt.jpg" data-lightbox="gallery" data-title="Poutine">
+            <img src="/assets/images/pt.jpg" alt="Poutine">
+            </a>
+            <a href="/assets/images/bg.jpg" data-lightbox="gallery" data-title="Bagel">
+            <img src="/assets/images/bg.jpg" alt="Bagel">
+            </a>
+            <a href="/assets/images/sb.jpg" data-lightbox="gallery" data-title="Smoked Beef">
+            <img src="/assets/images/sb.jpg" alt="Smoked Beef">
+            </a>
+            <a href="/assets/images/pie.jpg" data-lightbox="gallery" data-title="Tourtière">
+            <img src="/assets/images/pie.jpg" alt="Tourtière">
+            </a>
+         </div>
+      </section>
+      <!-- map - leaflet -->
+      <section id="map" data-aos="fade-up">
+         <h2>Our Location</h2>
+         <div id="map-container"></div>
+      </section>
+      <footer>
+         <p>© 2025 Charlotte Travel Co. | All Rights Reserved</p>
+         <p>Follow us on
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+         </p>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+      <script src="https://unpkg.com/lightbox2/dist/js/lightbox.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="/assets/js/granim.min.js"></script>
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <script>
+         AOS.init();
+      </script>
+      <script src="/assets/js/main.js"></script>
+   </body>
+</html>
